@@ -1,0 +1,13 @@
+runtime: java
+env: flex
+runtime_config:
+   jdk: openjdk8
+
+handlers:
+- url: /.*
+  script: this field is required, but ignored
+ 
+env_variables:
+  DATABASE_URL_SPRINGBOOT: "jdbc:postgresql://google/<DB>?socketFactoryArg=<Cloud SQL Connection>&socketFactory=com.google.cloud.sql.postgres.SocketFactory"
+  DATABASE_USER: "<user>"
+  DATABASE_PASSWORD: "<password>"

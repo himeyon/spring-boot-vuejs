@@ -1,0 +1,5 @@
+-Dhttp.proxyHost=proxy-nagaoka
+-Dhttp.proxyPort=8080
+-Dhttps.proxyHost=proxy-nagaoka
+-Dhttps.proxyPort=8080
+-Djdk.http.auth.tunneling.disabledSchemes=
