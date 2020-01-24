@@ -16,12 +16,14 @@ export default {
         datasets: [
           {
             label: 'Data One',
-            backgroundColor: hexToRgba('#E46651', 90),
+            backgroundColor: hexToRgba('#E46651', 1),
+            borderColor: hexToRgba('#E46651', 80),
             data: [30, 39, 10, 50, 30, 70, 35]
           },
           {
             label: 'Data Two',
-            backgroundColor: hexToRgba('#00D8FF', 90),
+            backgroundColor: hexToRgba('#00D8FF', 1),
+            borderColor: hexToRgba('#00D8FF', 80),
             data: [39, 80, 40, 35, 40, 20, 45]
           }
         ]

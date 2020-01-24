@@ -1,5 +1,6 @@
 <template>
   <div class="animated fadeIn">
+<!--
     <b-row>
       <b-col sm="6" lg="3">
         <b-card no-body class="bg-primary">
@@ -74,12 +75,12 @@
         </b-card>
       </b-col>
     </b-row>
-
+-->
     <b-card>
       <b-row>
         <b-col sm="5">
           <h4 id="traffic" class="card-title mb-0">Traffic</h4>
-          <div class="small text-muted">November 2017</div>
+          <div class="small text-muted">January 2020</div>
         </b-col>
         <b-col sm="7" class="d-none d-md-block">
           <b-button type="button" variant="primary" class="float-right"><i class="icon-cloud-download"></i></b-button>
@@ -123,6 +124,7 @@
         </b-row>
       </div>
     </b-card>
+<!--
     <b-row>
       <b-col sm="6" lg="3">
         <div class="brand-card">
@@ -203,6 +205,51 @@
             </div>
           </div>
         </div>
+      </b-col>
+    </b-row>
+-->
+    <b-row>
+      <b-col sm="12" md="6" lg="4">
+        <b-card header="Line Chart">
+          <div class="chart-wrapper">
+            <line-example chartId="chart-line-01"/>
+          </div>
+        </b-card>
+      </b-col>
+      <b-col sm="12" md="6" lg="4">
+        <b-card header="Bar Chart">
+          <div class="chart-wrapper">
+            <bar-example chartId="chart-bar-01"/>
+          </div>
+        </b-card>
+      </b-col>
+      <b-col sm="12" md="6" lg="4">
+        <b-card header="Doughnut Chart">
+          <div class="chart-wrapper">
+            <doughnut-example chartId="chart-doughnut-01"/>
+          </div>
+        </b-card>
+      </b-col>
+      <b-col sm="12" md="6" lg="4">
+        <b-card header="Radar Chart">
+          <div class="chart-wrapper">
+            <radar-example chartId="chart-radar-01"/>
+          </div>
+        </b-card>
+      </b-col>
+      <b-col sm="12" md="6" lg="4">
+        <b-card header="Pie Chart">
+          <div class="chart-wrapper">
+            <pie-example chartId="chart-pie-01"/>
+          </div>
+        </b-card>
+      </b-col>
+      <b-col sm="12" md="6" lg="4">
+        <b-card header="Polar Area Chart">
+          <div class="chart-wrapper">
+            <polar-area-example chartId="chart-polar-area-01"/>
+          </div>
+        </b-card>
       </b-col>
     </b-row>
     <b-row>
@@ -456,6 +503,12 @@ import CardBarChartExample from './dashboard/CardBarChartExample'
 import MainChartExample from './dashboard/MainChartExample'
 import SocialBoxChartExample from './dashboard/SocialBoxChartExample'
 import CalloutChartExample from './dashboard/CalloutChartExample'
+import BarExample from './charts/BarExample'
+import LineExample from './charts/LineExample'
+import DoughnutExample from './charts/DoughnutExample'
+import RadarExample from './charts/RadarExample'
+import PieExample from './charts/PieExample'
+import PolarAreaExample from './charts/PolarAreaExample'
 import { Callout } from '@coreui/vue'
 
 export default {
@@ -468,7 +521,13 @@ export default {
     CardBarChartExample,
     MainChartExample,
     SocialBoxChartExample,
-    CalloutChartExample
+    CalloutChartExample,
+    BarExample,
+    LineExample,
+    DoughnutExample,
+    RadarExample,
+    PieExample,
+    PolarAreaExample
   },
   data: function () {
     return {
@@ -525,7 +584,7 @@ export default {
       ],
       tableFields: {
         avatar: {
-          label: '<i class="icon-people"></i>',
+          label: '',
           class: 'text-center'
         },
         user: {

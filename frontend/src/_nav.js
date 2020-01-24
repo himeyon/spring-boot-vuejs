@@ -1,17 +1,33 @@
 export default {
   items: [
     {
-      name: 'Dashboard',
-      url: '/dashboard',
+      name: '大日程スケジュール全体進捗',
+      url: '/xxx',
       icon: 'icon-speedometer',
-      badge: {
-        variant: 'primary',
-        text: 'NEW'
-      }
+    },
+    {
+      name: '優先部品スケジュール進捗',
+      url: '/xxx',
+      icon: 'icon-clock',
+    },
+    {
+      name: '設備負荷管理',
+      url: '/xxx',
+      icon: 'icon-pie-chart',
+    },
+    {
+      name: '工数負荷管理',
+      url: '/xxx',
+      icon: 'icon-equalizer',
+    },
+    {
+      name: '引合いオーダー概略納期案内',
+      url: '/xxx',
+      icon: 'icon-bubble',
     },
     {
       title: true,
-      name: 'Theme',
+      name: '設備負荷管理',
       class: '',
       wrapper: {
         element: '',
@@ -19,18 +35,72 @@ export default {
       }
     },
     {
-      name: 'Colors',
+      name: '設備負荷山積み表示',
+      url: '/xxx',
+      icon: 'icon-cursor',
+    },
+    {
+      name: '設備負荷山崩し実施結果表示',
+      url: '/xxx',
+      icon: 'icon-chart',
+    },
+    {
+      name: '設備負荷山崩し実施結果出力',
+      url: '/xxx',
+      icon: 'icon-cloud-download',
+    },
+    {
+      title: true,
+      name: '画面サンプル',
+      class: '',
+      wrapper: {
+        element: '',
+        attributes: {}
+      }
+    },
+    {
+      name: 'ダッシュボード',
+      url: '/dashboard',
+      icon: 'icon-speedometer',
+    },
+    {
+      name: '設備管理',
+      url: '/facilitymanage',
+      icon: 'icon-layers',
+    },
+    {
+      name: 'トレーサビリティ',
+      url: '/traceability',
+      icon: 'icon-cursor',
+    },
+    {
+      name: '品質管理',
+      url: '/qualitymanage',
+      icon: 'icon-diamond',
+    },
+/*
+    {
+      title: true,
+      name: '開発用テーマ',
+      class: '',
+      wrapper: {
+        element: '',
+        attributes: {}
+      }
+    },
+    {
+      name: '色',
       url: '/theme/colors',
       icon: 'icon-drop'
     },
     {
-      name: 'Typography',
+      name: '書式',
       url: '/theme/typography',
       icon: 'icon-pencil'
     },
     {
       title: true,
-      name: 'Components',
+      name: '開発用コンポーネント群',
       class: '',
       wrapper: {
         element: '',
@@ -38,7 +108,7 @@ export default {
       }
     },
     {
-      name: 'Base',
+      name: 'UI基本',
       url: '/base',
       icon: 'icon-puzzle',
       children: [
@@ -125,7 +195,7 @@ export default {
       ]
     },
     {
-      name: 'Buttons',
+      name: 'ボタン',
       url: '/buttons',
       icon: 'icon-cursor',
       children: [
@@ -152,12 +222,12 @@ export default {
       ]
     },
     {
-      name: 'Charts',
+      name: 'グラフ',
       url: '/charts',
       icon: 'icon-pie-chart'
     },
     {
-      name: 'Icons',
+      name: 'アイコン',
       url: '/icons',
       icon: 'icon-star',
       children: [
@@ -192,7 +262,7 @@ export default {
       ]
     },
     {
-      name: 'Notifications',
+      name: '通知',
       url: '/notifications',
       icon: 'icon-bell',
       children: [
@@ -214,14 +284,11 @@ export default {
       ]
     },
     {
-      name: 'Widgets',
+      name: 'ウィジェット',
       url: '/widgets',
-      icon: 'icon-calculator',
-      badge: {
-        variant: 'primary',
-        text: 'NEW'
-      }
+      icon: 'icon-calculator'
     },
+/*
     {
       divider: true
     },
@@ -281,5 +348,6 @@ export default {
       variant: 'danger',
       attributes: { target: '_blank', rel: 'noopener' }
     },
+*/
   ]
 }

@@ -7,8 +7,11 @@ import 'firebase/auth'
 // Containers
 const DefaultContainer = () => import('@/containers/DefaultContainer')
 
-// Views
+// 提案用
 const Dashboard = () => import('@/views/Dashboard')
+const Traceability = () => import('@/views/Traceability')
+const Qualitymanage = () => import('@/views/Qualitymanage')
+const Facilitymanage = () => import('@/views/Facilitymanage')
 
 const Colors = () => import('@/views/theme/Colors')
 const Typography = () => import('@/views/theme/Typography')
@@ -72,14 +75,32 @@ let router = new Router({
     {
       path: '/',
       redirect: '/dashboard',
-      name: 'Home',
+      name: 'ホーム',
       component: DefaultContainer,
       meta: { requiresAuth: true },
       children: [
         {
           path: 'dashboard',
-          name: 'Dashboard',
+          name: 'ダッシュボード',
           component: Dashboard,
+          meta: { requiresAuth: true }
+        },
+        {
+          path: 'traceability',
+          name: 'トレーサビリティ',
+          component: Traceability,
+          meta: { requiresAuth: true }
+        },
+        {
+          path: 'facilitymanage',
+          name: '設備管理',
+          component: Facilitymanage,
+          meta: { requiresAuth: true }
+        },
+        {
+          path: 'qualitymanage',
+          name: '品質管理',
+          component: Qualitymanage,
           meta: { requiresAuth: true }
         },
         {

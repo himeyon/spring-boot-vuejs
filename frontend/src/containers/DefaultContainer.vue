@@ -50,12 +50,11 @@
     <TheFooter>
       <!--footer-->
       <div>
-        <a href="https://coreui.io">CoreUI</a>
-        <span class="ml-1">&copy; 2018 creativeLabs.</span>
+        <a href="http://www.aikawa-iron.co.jp/">相川鉄工株式会社</a>
+        <span class="ml-1">&copy; 2020 1999-2020 AIKAWA Iron Works Co.,Ltd All Rights Reserved.</span>
       </div>
       <div class="ml-auto">
-        <span class="mr-1">Powered by</span>
-        <a href="https://coreui.io">CoreUI for Vue</a>
+        <span class="mr-1">Powered by</span>TAKT SYSTEMS, INC. All rights reserved.
       </div>
     </TheFooter>
   </div>

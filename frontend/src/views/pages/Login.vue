@@ -8,21 +8,21 @@
               <b-card-body>
                 <b-form>
                   <h1>Login</h1>
-                  <p class="text-muted">Sign In to your account</p>
+                  <p class="text-muted">アカウント情報を入力してください</p>
                   <b-input-group class="mb-3">
                     <b-input-group-prepend><b-input-group-text><i class="icon-user"></i></b-input-group-text></b-input-group-prepend>
-                    <b-form-input type="text" class="form-control" placeholder="Email" autocomplete="username email" v-model="username" />
+                    <b-form-input type="text" class="form-control" placeholder="Eメール" autocomplete="username email" v-model="username" />
                   </b-input-group>
                   <b-input-group class="mb-4">
                     <b-input-group-prepend><b-input-group-text><i class="icon-lock"></i></b-input-group-text></b-input-group-prepend>
-                    <b-form-input type="password" class="form-control" placeholder="Password" autocomplete="current-password" v-model="password"/>
+                    <b-form-input type="password" class="form-control" placeholder="パスワード" autocomplete="current-password" v-model="password"/>
                   </b-input-group>
                   <b-row>
                     <b-col cols="6">
-                      <b-button variant="primary" class="px-4" @click="signIn">Login</b-button>
+                      <b-button variant="primary" class="px-4" @click="signIn">ログイン</b-button>
                     </b-col>
                     <b-col cols="6" class="text-right">
-                      <b-button variant="link" class="px-0">Forgot password?</b-button>
+                      <b-button variant="link" class="px-0">パスワードをお忘れですか?</b-button>
                     </b-col>
                   </b-row>
                 </b-form>
@@ -32,8 +32,8 @@
               <b-card-body class="text-center">
                 <div>
                   <h2>Sign up</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  <b-button variant="primary" class="active mt-3" @click="register">Register Now!</b-button>
+                  <p>新規アカウントを登録する場合は、以下の「アカウント登録」から登録してください。</p>
+                  <b-button variant="primary" class="active mt-3" @click="register">アカウント登録</b-button>
                 </div>
               </b-card-body>
             </b-card>
